@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 2</title>
+</head>
+
+<body>
+
+    <script>
+        x = prompt("Informe um número: ");
+
+        function quadradoPerfeito(x) {
+            var s = parseInt(Math.sqrt(x));
+            return (s * s == x);
+        }
+
+        function Fibonacci(n) {
+            return quadradoPerfeito(5 * n * n + 4) ||
+                quadradoPerfeito(5 * n * n - 4);
+        }
+
+        if (Fibonacci(x)) {
+            alert(x + " é um número da sequência de Fibonacci.");
+        }
+        else {
+            alert(x + " não é um número da sequência de Fibonacci.");
+        }
+
+    </script>
+
+</body>
+
+</html>

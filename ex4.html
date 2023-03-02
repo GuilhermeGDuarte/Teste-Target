@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Exercício 4</title>
+</head>
+
+<body>
+    <script>
+        const faturamentoSP = 67836.43;
+        const faturamentoRJ = 36678.66;
+        const faturamentoMG = 29229.88;
+        const faturamentoES = 27165.48;
+        const faturamentoOutros = 19849.53;
+
+        const faturamentoTotal = faturamentoSP + faturamentoRJ + faturamentoMG + faturamentoES + faturamentoOutros;
+
+        const percentualSP = (faturamentoSP / faturamentoTotal) * 100;
+        const percentualRJ = (faturamentoRJ / faturamentoTotal) * 100;
+        const percentualMG = (faturamentoMG / faturamentoTotal) * 100;
+        const percentualES = (faturamentoES / faturamentoTotal) * 100;
+        const percentualOutros = (faturamentoOutros / faturamentoTotal) * 100;
+
+        alert(`Percentual de representação de cada estado no faturamento mensal:
+    SP: ${percentualSP}%
+    RJ: ${percentualRJ}%
+    MG: ${percentualMG}%
+    ES: ${percentualES}%
+    Outros: ${percentualOutros}%
+    `);
+    </script>
+</body>
+
+</html>
